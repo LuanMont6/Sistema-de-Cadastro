@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Contatos</h1>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Exemplo: João da Silva..." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Exemplo: joaodasilva@..." required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" placeholder="Exemplo: +00 (00) 0000-0000..." required>
+
+            <button type="button" onclick="addContact()">Salvar</button>
+        </form>
+
+        <h2>Lista de Contatos</h2>
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="contactList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
